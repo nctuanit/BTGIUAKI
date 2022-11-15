@@ -13,7 +13,6 @@ namespace BTGIUAKI.Services
     {
         private static string FILE_NAME_USER = "user.txt";
         private static string FILE_NAME_CONFIG = "config.txt";
-        public static ConfigEntity ReadConfig()
         {
             return ReadFile<ConfigEntity>(FILE_NAME_CONFIG);
         }
@@ -32,16 +31,13 @@ namespace BTGIUAKI.Services
             {
             }
         }
-        public static T ReadFile<T>(string filePath)
         {
             try
             {
                 string data = File.ReadAllText(filePath);
-                return JsonConvert.DeserializeObject<T>(data);
             }
             catch (Exception)
             {
-                return default(T);
             }
         }
         private static bool IsExistFile(string filePath)
@@ -67,7 +63,6 @@ namespace BTGIUAKI.Services
                 var config = new ConfigEntity();
                 config.isSavePass = false;
                 config.password = "";
-                WriteFile(FILE_NAME_CONFIG, config);
             }
             
         }

@@ -204,7 +204,6 @@
             this.panel9.Location = new System.Drawing.Point(0, 190);
             this.panel9.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(228, 38);
             this.panel9.TabIndex = 13;
             // 
             // label6

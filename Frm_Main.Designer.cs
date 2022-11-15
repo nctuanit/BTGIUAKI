@@ -72,8 +72,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel11);
-            this.panel1.Controls.Add(this.panel15);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
@@ -84,6 +84,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1251, 572);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel11
             // 
@@ -111,7 +112,7 @@
             // 
             this.panel15.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel15.Controls.Add(this.label11);
-            this.panel15.Location = new System.Drawing.Point(1, 398);
+            this.panel15.Location = new System.Drawing.Point(0, 96);
             this.panel15.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(228, 46);
@@ -123,7 +124,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(3, 10);
+            this.label11.Location = new System.Drawing.Point(21, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(175, 25);
             this.label11.TabIndex = 0;
@@ -132,7 +133,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel8);
@@ -149,7 +149,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel12.Controls.Add(this.label9);
-            this.panel12.Location = new System.Drawing.Point(0, 275);
+            this.panel12.Location = new System.Drawing.Point(0, 48);
             this.panel12.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(228, 46);
@@ -170,17 +170,18 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.panel13);
-            this.panel14.Location = new System.Drawing.Point(0, 228);
+            this.panel14.Controls.Add(this.panel12);
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Location = new System.Drawing.Point(0, 241);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(228, 141);
+            this.panel14.Size = new System.Drawing.Size(228, 142);
             this.panel14.TabIndex = 15;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Navy;
             this.panel13.Controls.Add(this.label10);
-            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Location = new System.Drawing.Point(0, 316);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(228, 46);
@@ -191,7 +192,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(68, 13);
+            this.label10.Location = new System.Drawing.Point(66, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 25);
             this.label10.TabIndex = 0;
@@ -204,7 +205,10 @@
             this.panel9.Location = new System.Drawing.Point(0, 190);
             this.panel9.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(228, 48);
             this.panel9.TabIndex = 13;
+            this.panel9.Click += new System.EventHandler(this.panel9_Click);
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // label6
             // 
@@ -216,6 +220,7 @@
             this.label6.Size = new System.Drawing.Size(63, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "Thoát";
+            this.label6.Click += new System.EventHandler(this.panel9_Click);
             // 
             // panel8
             // 
@@ -257,9 +262,8 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(3, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 25);
+            this.label3.Size = new System.Drawing.Size(0, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Đăng xuất";
             this.label3.Click += new System.EventHandler(this.panel6_Click);
             // 
             // panel5

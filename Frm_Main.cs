@@ -46,5 +46,32 @@ namespace BTGIUAKI
         {
             new Frm_DoiMatKhau().ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            isLogin(false);
+        }
+
+        public void isLogin(bool flag)
+        {
+            if (flag)
+            {
+                label3.Text = "Đăng xuất";
+            }
+            else
+            {
+                label3.Text = "Đăng nhập";
+            }
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void panel9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

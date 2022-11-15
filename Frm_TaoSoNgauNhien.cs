@@ -57,5 +57,15 @@ namespace BTGIUAKI
         {
             this.Close();
         }
+
+        private void Frm_TaoSoNgauNhien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void containerMainMatrix_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
